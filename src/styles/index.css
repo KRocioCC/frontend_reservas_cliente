@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    html {
+        font-family: 'Inter', system-ui, sans-serif;
+    }
+
+    body {
+        @apply bg-blue-50;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4 {
+        @apply font-bold text-slate-800;
+    }
+
+    .hide-scrollbar {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE y Edge */
+    }
+    .hide-scrollbar::-webkit-scrollbar {
+    display: none; /* Chrome, Safari y Opera */
+    }
+}
